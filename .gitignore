@@ -1,0 +1,4 @@
+.venv
+data/dialysis_current_facilities
+.DS_Store
+*.pyc
