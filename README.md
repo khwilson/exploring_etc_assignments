@@ -1,5 +1,7 @@
 # Brief exploration of dialysis facilities
 
+WARNING: This repo should really be a gist, i.e., considered **VERY** rough, but it uses too many dependencies to just be a gist, so a repo it is. If something isn't clear, it's because it's mostly just for my archival purposes. :-)
+
 In this repo we briefly examine [Medicare's End-Stage Renal Disease Treatment Choices (ETC)](https://innovation.cms.gov/innovation-models/esrd-treatment-choices-model). In particular, we look at the distribution of assignment to treatment following up on [this paper](https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2794962) in JAMA Network Open from Wilk, et al.
 
 That paper didn't publicly provide data or code that I could find, so I attempted to, as best as possible, recreate one of their analyses. In particular, I was curious how "strange" it was that the second largest provider of dialysis "ETC-assigned facilities were 14% (5.1 [95% CI, 0.9-9.4] percentage points) more likely than control facilities to be owned by the second largest dialysis organization." The paper calculates this outcome based on a categorical χ² test with a Bonferroni correction for 27 comparisons. This is appropriate if you want to measure deviation from a "balanced experiment." But given that there were only 306 units of randomization (healthcare referral regions), I was curious as to how unexpected this was for a simple randomized experiment.
